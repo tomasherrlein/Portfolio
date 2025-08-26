@@ -1,0 +1,86 @@
+/* --- Projects --- */
+
+/* Estilos base: Diseño para móviles primero (imagen arriba, texto abajo) */
+.projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+    /* Configuración para el diseño de la tarjeta en móviles */
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+    padding: 0.5rem;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.card-image-wrapper {
+    width: 100%;
+    padding: 1rem;
+}
+
+.card-image-wrapper img {
+    width: 80%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px; 
+}
+
+.card-content {
+    flex-grow: 1;
+    padding: 1rem; 
+}
+
+.card-content h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-content footer {
+    margin-top: 1rem;
+    gap: 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.card-content footer a {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .card {
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+    }
+
+    .card-image-wrapper img {
+        width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+        height: auto; /* Asegura que la imagen ocupe el 100% del contenedor */
+        object-fit: cover; /* Recorta la imagen para que cubra todo el espacio */
+        margin-bottom: 0;
+        border-radius: 5px;
+    }
+
+    .card-content {
+        padding: 1.5rem;
+    }
+}

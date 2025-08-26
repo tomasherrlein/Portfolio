@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/hero.css">
+    <link rel="stylesheet" href="./css/experience.css">
+    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 </head>
@@ -16,13 +22,13 @@
             <a href="#sobre-mi">Sobre mi</a>
             
             <!-- Iconos-->
-            <div style="width: 1px;background-color: #ddd;"> </div>
-            <a href="mailto:herrlein.tomas@gmail.com" class="transition hover:text-blue-500">
+            <a href="mailto:herrlein.tomas@gmail.com">
             <i class="fas fa-envelope"></i></a>
-            <a href="https://www.linkedin.com/in/tomas-herrlein-8a603a302/" target="_blank" class="transition hover:text-blue-500 text-xl">
+            <a href="https://www.linkedin.com/in/tomas-herrlein-8a603a302/" target="_blank">
             <i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/tomasherrlein" target="_blank" class="transition hover:text-blue-500 text-xl">
+            <a href="https://github.com/tomasherrlein" target="_blank">
             <i class="fab fa-github"></i> </a>
+
         </nav>
     </header>
 
@@ -63,7 +69,9 @@
             <h2>Proyectos</h2>
             <div class="projects-grid">
                 <article class="card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiIqKUJUMxWA9TlaWcnbQwcWlFhktEwlKBFw&s" alt="foto de proyecto">
+                    <div class="card-image-wrapper">
+                        <img src="./public/project1.png" alt="foto de proyecto">
+                    </div>
                     <div class="card-content">
                         <h3>Asistencias de investigadores</h3>
                         <p>Aplicación de escritorio en C# con Windows Forms para registrar y administrar las asistencias del personal investigador.</p>
