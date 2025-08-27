@@ -1,0 +1,6 @@
+.about-me-content {
+    padding: 1.5rem;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    border: 1px solid var(--border);
+}
